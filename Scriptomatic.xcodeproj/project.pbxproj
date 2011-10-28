@@ -1,0 +1,252 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7A375B0F145B18AB00DBF528 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A375B0E145B18AB00DBF528 /* Cocoa.framework */; };
+		7A375B1C145B192700DBF528 /* OCActOnFileWithScript.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A375B1B145B192700DBF528 /* OCActOnFileWithScript.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7A375B0B145B18AB00DBF528 /* Scriptomatic.sugar */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Scriptomatic.sugar; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A375B0E145B18AB00DBF528 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		7A375B12145B18AB00DBF528 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		7A375B13145B18AB00DBF528 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A375B1A145B192700DBF528 /* OCActOnFileWithScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCActOnFileWithScript.h; path = Classes/OCActOnFileWithScript.h; sourceTree = "<group>"; };
+		7A375B1B145B192700DBF528 /* OCActOnFileWithScript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCActOnFileWithScript.m; path = Classes/OCActOnFileWithScript.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7A375B07145B18AB00DBF528 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A375B0F145B18AB00DBF528 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7A375AFF145B18AA00DBF528 = {
+			isa = PBXGroup;
+			children = (
+				7A375B10145B18AB00DBF528 /* Scriptomatic */,
+				7A375B0D145B18AB00DBF528 /* Frameworks */,
+				7A375B0C145B18AB00DBF528 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7A375B0C145B18AB00DBF528 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A375B0B145B18AB00DBF528 /* Scriptomatic.sugar */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A375B0D145B18AB00DBF528 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A375B0E145B18AB00DBF528 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A375B10145B18AB00DBF528 /* Scriptomatic */ = {
+			isa = PBXGroup;
+			children = (
+				7A375B14145B18AB00DBF528 /* XML Based */,
+				7A375B11145B18AB00DBF528 /* Supporting Files */,
+				7A375B1A145B192700DBF528 /* OCActOnFileWithScript.h */,
+				7A375B1B145B192700DBF528 /* OCActOnFileWithScript.m */,
+			);
+			path = Scriptomatic;
+			sourceTree = "<group>";
+		};
+		7A375B11145B18AB00DBF528 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7A375B12145B18AB00DBF528 /* Prefix.pch */,
+				7A375B13145B18AB00DBF528 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7A375B14145B18AB00DBF528 /* XML Based */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "XML Based";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7A375B0A145B18AB00DBF528 /* Scriptomatic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A375B17145B18AB00DBF528 /* Build configuration list for PBXNativeTarget "Scriptomatic" */;
+			buildPhases = (
+				7A375B06145B18AB00DBF528 /* Sources */,
+				7A375B07145B18AB00DBF528 /* Frameworks */,
+				7A375B08145B18AB00DBF528 /* Resources */,
+				7A375B09145B18AB00DBF528 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Scriptomatic;
+			productName = Scriptomatic;
+			productReference = 7A375B0B145B18AB00DBF528 /* Scriptomatic.sugar */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7A375B01145B18AA00DBF528 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = MacRabbit;
+			};
+			buildConfigurationList = 7A375B04145B18AA00DBF528 /* Build configuration list for PBXProject "Scriptomatic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7A375AFF145B18AA00DBF528;
+			productRefGroup = 7A375B0C145B18AB00DBF528 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7A375B0A145B18AB00DBF528 /* Scriptomatic */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7A375B08145B18AB00DBF528 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7A375B09145B18AB00DBF528 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Copy all files in the \"XML Based\" folder into the root of the final Sugar\nrsync -a --exclude=\".*\"  \"$SRCROOT/$PRODUCT_NAME/XML Based/\" \"$TARGET_BUILD_DIR/$WRAPPER_NAME/\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7A375B06145B18AB00DBF528 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A375B1C145B192700DBF528 /* OCActOnFileWithScript.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7A375B15145B18AB00DBF528 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_PREPROCESSOR_DEFINITIONS = NS_BUILD_32_LIKE_64;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		7A375B16145B18AB00DBF528 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_PREPROCESSOR_DEFINITIONS = NS_BUILD_32_LIKE_64;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		7A375B18145B18AB00DBF528 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				ESPRESSO_PATH = /Applications/Espresso.app;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Scriptomatic/Prefix.pch;
+				HEADER_SEARCH_PATHS = "$(ESPRESSO_PATH)/Contents/Headers";
+				INFOPLIST_FILE = Scriptomatic/Info.plist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = sugar;
+			};
+			name = Debug;
+		};
+		7A375B19145B18AB00DBF528 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ESPRESSO_PATH = /Applications/Espresso.app;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Scriptomatic/Prefix.pch;
+				HEADER_SEARCH_PATHS = "$(ESPRESSO_PATH)/Contents/Headers";
+				INFOPLIST_FILE = Scriptomatic/Info.plist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = sugar;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7A375B04145B18AA00DBF528 /* Build configuration list for PBXProject "Scriptomatic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A375B15145B18AB00DBF528 /* Debug */,
+				7A375B16145B18AB00DBF528 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A375B17145B18AB00DBF528 /* Build configuration list for PBXNativeTarget "Scriptomatic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A375B18145B18AB00DBF528 /* Debug */,
+				7A375B19145B18AB00DBF528 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7A375B01145B18AA00DBF528 /* Project object */;
+}
