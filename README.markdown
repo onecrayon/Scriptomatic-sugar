@@ -1,16 +1,28 @@
 # Scriptomatic.sugar
 
-This Sugar is a simple proof of concept that is **not currently intended for actual use**.
+This Sugar is a simple proof of concept that provides a way to execute AppleScripts from FileActions and TextActions in Espresso. For FileActions, a list of all the selected file paths is passed to the AppleScript. TextActions similar receive the selected text.
 
-Basically all it does is provide a way to execute AppleScripts from FileActions that receive an argument list of all selected files. However, it does not behave very well (main issue being that it completely blocks Espresso from running for the duration the AppleScript runs), and I do not recommend you actually use it.
+**Please note** that executing AppleScripts will currently block Espresso from running for the duration that the script runs. As a result, this is only particularly useful for small scripts that are very quick to execute.
 
 I am not sure yet if I will continue development on this; I threw it together just to see if it would work in response to a user feature request, and as it is not something that I have any interest in using myself I may or may not devote any further time to it.
 
-In the possibility that someone else out there might want to take the idea and run with it, though, I've posted my initial code. If you do want to try and develop it into an actual Sugar here are some things to think about:
+## Installation
 
-* The Sugar should not look for AppleScripts inside of itself. Ideally, it would instead look inside whatever bundle the FileAction is defined in (since then a user could install the Scriptomatic.sugar, and then create a custom Sugar for their particular AppleScript needs)
-* If possible, AppleScripts should not block Espresso's execution. Not sure if this is actually possible, though; certainly nothing obvious came out of my initial searches
-* It might be desirable to receive information beyond the paths of the selected files, pass paths as POSIX paths instead of Unix ones, or enable AppleScripts for TextActions instead of just FileActions.
+You can download a compiled version of Scriptomatic.sugar here:
+
+<https://github.com/downloads/onecrayon/Scriptomatic-sugar/Scriptomatic.sugar.zip>
+
+Alternatively, you can clone this GitHub repo, open the XCode project, and compile it yourself. If you have your Espresso application stored anywhere other than the root Applications directory, you will need to first modify the ESPRESSO_PATH build setting for the Scriptomatic target.
+
+## Usage
+
+On its own Scriptomatic.sugar does nothing. To use it, you will need to create your own custom Sugar containing the AppleScripts you wish access to along with XML definitions for their associated text or file actions in Espresso.
+
+See the ExampleScripts.sugar included in this project for the bare minimum files you need to define your script sugar, and you can find documentation about the action XML here:
+
+<http://wiki.macrabbit.com/index/ActionXML/>
+
+Essentially, you will need an Info.plist file (to define your Sugar's identifier and version), a folder with your AppleScripts in it, and any FileAction or TextAction definitions that you need.
 
 ## MIT License
 

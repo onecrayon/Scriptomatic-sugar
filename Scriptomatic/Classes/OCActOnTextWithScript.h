@@ -1,8 +1,8 @@
 //
-//  OCActOnFileWithScript.h
+//  OCActOnTextWithScript.h
 //  Scriptomatic
 //
-//  Created by Ian Beck on 10/28/11.
+//  Created by Ian Beck on 11/1/11.
 //  Copyright 2011 MacRabbit. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 #import "OCScriptomaticBase.h"
 
 
-@interface OCActOnFileWithScript : OCScriptomaticBase {
+@interface OCActOnTextWithScript : OCScriptomaticBase {
 @private
     
 }

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		7A375B0F145B18AB00DBF528 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A375B0E145B18AB00DBF528 /* Cocoa.framework */; };
 		7A375B1C145B192700DBF528 /* OCActOnFileWithScript.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A375B1B145B192700DBF528 /* OCActOnFileWithScript.m */; };
+		7ACEB9C41460AACA0046FFAE /* OCScriptomaticBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACEB9C31460AACA0046FFAE /* OCScriptomaticBase.m */; };
+		7ACEB9C71460AC360046FFAE /* OCActOnTextWithScript.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACEB9C61460AC360046FFAE /* OCActOnTextWithScript.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +20,10 @@
 		7A375B13145B18AB00DBF528 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A375B1A145B192700DBF528 /* OCActOnFileWithScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCActOnFileWithScript.h; path = Classes/OCActOnFileWithScript.h; sourceTree = "<group>"; };
 		7A375B1B145B192700DBF528 /* OCActOnFileWithScript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCActOnFileWithScript.m; path = Classes/OCActOnFileWithScript.m; sourceTree = "<group>"; };
+		7ACEB9C21460AACA0046FFAE /* OCScriptomaticBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCScriptomaticBase.h; path = Classes/OCScriptomaticBase.h; sourceTree = "<group>"; };
+		7ACEB9C31460AACA0046FFAE /* OCScriptomaticBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCScriptomaticBase.m; path = Classes/OCScriptomaticBase.m; sourceTree = "<group>"; };
+		7ACEB9C51460AC360046FFAE /* OCActOnTextWithScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCActOnTextWithScript.h; path = Classes/OCActOnTextWithScript.h; sourceTree = "<group>"; };
+		7ACEB9C61460AC360046FFAE /* OCActOnTextWithScript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCActOnTextWithScript.m; path = Classes/OCActOnTextWithScript.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,10 @@
 				7A375B11145B18AB00DBF528 /* Supporting Files */,
 				7A375B1A145B192700DBF528 /* OCActOnFileWithScript.h */,
 				7A375B1B145B192700DBF528 /* OCActOnFileWithScript.m */,
+				7ACEB9C51460AC360046FFAE /* OCActOnTextWithScript.h */,
+				7ACEB9C61460AC360046FFAE /* OCActOnTextWithScript.m */,
+				7ACEB9C21460AACA0046FFAE /* OCScriptomaticBase.h */,
+				7ACEB9C31460AACA0046FFAE /* OCScriptomaticBase.m */,
 			);
 			path = Scriptomatic;
 			sourceTree = "<group>";
@@ -162,6 +172,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A375B1C145B192700DBF528 /* OCActOnFileWithScript.m in Sources */,
+				7ACEB9C41460AACA0046FFAE /* OCScriptomaticBase.m in Sources */,
+				7ACEB9C71460AC360046FFAE /* OCActOnTextWithScript.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,6 +190,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -190,6 +203,7 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};

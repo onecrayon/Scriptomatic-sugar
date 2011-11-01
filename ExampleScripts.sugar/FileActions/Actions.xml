@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<action-recipes>
+	
+	<!--
+	This is an example action. See this for documentation on this XML:
+	
+	http://wiki.macrabbit.com/index/ActionXML/
+	-->
+	<action id="com.onecrayon.sugar.ExampleScripts.exampleFileAction" category="category.id.would.go.here">
+		<!-- Required -->
+		<class>OCActOnFileWithScript</class>
+		<!--
+		Technically, we recommend using Localizable.strings instead of <title>:
+		
+		http://wiki.macrabbit.com/index/Localizable.strings/
+		-->
+		<title>AppleScript File Example</title>
+		<setup>
+			<!-- Required; path to your AppleScript from the root of your Sugar -->
+			<script-path>AppleScripts/HelloWorld.scpt</script-path>
+			<!-- Accepts "true" or "false"; defaults to "false" -->
+			<allow-multiple-selections>false</allow-multiple-selections>
+		</setup>
+	</action>
+	
+</action-recipes>
