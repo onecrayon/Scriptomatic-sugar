@@ -30,7 +30,7 @@
 		// Escape any quotation marks in the string
 		[tempSelection replaceOccurrencesOfString:@"\"" withString:@"\\\""];
 		// Add the string to our list of arguments
-		[selections appendFormat:@"\"%@\"", tempSelection];
+		[selections appendFormat:@"\"%@\" ", tempSelection];
 	}
 	// Create our osascript command
 	NSString *command = [NSString stringWithFormat:@"osascript %@ %@", scriptPath, selections];

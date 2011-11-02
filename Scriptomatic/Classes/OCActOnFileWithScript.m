@@ -23,7 +23,7 @@
 	// Parse our file path(s) into an argument list
 	NSMutableString *paths = [NSMutableString string];
 	for (NSURL *url in [context URLs]) {
-		[paths appendFormat:@"\"%@\"", [url path]];
+		[paths appendFormat:@"\"%@\" ", [url path]];
 	}
 	// Create our osascript command
 	NSString *command = [NSString stringWithFormat:@"osascript %@ %@", scriptPath, paths];
