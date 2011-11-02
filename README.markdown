@@ -1,6 +1,6 @@
 # Scriptomatic.sugar
 
-This Sugar is a simple proof of concept that provides a way to execute AppleScripts from FileActions and TextActions in Espresso. For FileActions, a list of all the selected file paths is passed to the AppleScript. TextActions similar receive the selected text.
+This Sugar is a simple proof of concept that provides a way to execute AppleScripts from FileActions and TextActions in Espresso. For FileActions, a list of all the selected file paths is passed to the AppleScript. TextActions similarly receive the selected text.
 
 **Please note** that executing AppleScripts will currently block Espresso from running for the duration that the script runs. As a result, this is only particularly useful for small scripts that are very quick to execute.
 
