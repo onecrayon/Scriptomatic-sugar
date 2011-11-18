@@ -3,7 +3,7 @@
 //  Scriptomatic
 //
 //  Created by Ian Beck on 11/1/11.
-//  Copyright 2011 MacRabbit. All rights reserved.
+//  Copyright 2011 One Crayon. All rights reserved.
 //
 
 #import "OCActOnTextWithScript.h"

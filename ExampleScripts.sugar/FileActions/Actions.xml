@@ -18,8 +18,9 @@
 		<setup>
 			<!-- Required; path to your AppleScript from the root of your Sugar -->
 			<script-path>AppleScripts/HelloWorld.scpt</script-path>
-			<!-- Accepts "true" or "false"; defaults to "false" -->
+			<!-- Both accept "true" or "false" and default to "false" -->
 			<allow-multiple-selections>false</allow-multiple-selections>
+			<allow-empty-selection>true</allow-empty-selection>
 		</setup>
 	</action>
 	

@@ -3,7 +3,7 @@
 //  Scriptomatic
 //
 //  Created by Ian Beck on 10/28/11.
-//  Copyright 2011 MacRabbit. All rights reserved.
+//  Copyright 2011 One Crayon. All rights reserved.
 //
 
 #import <Cocoa/Cocoa.h>
@@ -14,5 +14,7 @@
 @private
     
 }
+
+- (NSURL *)projectURLForContext:(id)context;
 
 @end

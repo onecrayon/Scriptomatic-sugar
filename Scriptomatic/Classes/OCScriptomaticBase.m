@@ -3,7 +3,7 @@
 //  Scriptomatic
 //
 //  Created by Ian Beck on 11/1/11.
-//  Copyright 2011 MacRabbit. All rights reserved.
+//  Copyright 2011 One Crayon. All rights reserved.
 //
 
 #import "OCScriptomaticBase.h"
@@ -21,6 +21,11 @@
 			allowMultipleSelections = ([[dictionary objectForKey:@"allow-multiple-selections"] isEqualToString:@"true"] == YES) ? YES : NO;
 		} else {
 			allowMultipleSelections = NO;
+		}
+		if ([dictionary objectForKey:@"allow-empty-selection"]) {
+			allowNoSelection = ([[dictionary objectForKey:@"allow-empty-selection"] isEqualToString:@"true"] == YES) ? YES : NO;
+		} else {
+			allowNoSelection = NO;
 		}
 		scriptPath = [dictionary objectForKey:@"script-path"];
 		if (scriptPath) {
