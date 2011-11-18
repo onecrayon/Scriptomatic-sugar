@@ -4,8 +4,6 @@ This Sugar is a simple proof of concept that provides a way to execute AppleScri
 
 **Please note** that executing AppleScripts will currently block Espresso from running for the duration that the script runs. As a result, this is only particularly useful for small scripts that are very quick to execute.
 
-I am not sure yet if I will continue development on this; I threw it together just to see if it would work in response to a user feature request, and as it is not something that I have any interest in using myself I may or may not devote any further time to it.
-
 ## Installation
 
 You can download a compiled version of Scriptomatic.sugar here:
@@ -23,6 +21,15 @@ See the ExampleScripts.sugar included in this project for the bare minimum files
 <http://wiki.macrabbit.com/index/ActionXML/>
 
 Essentially, you will need an Info.plist file (to define your Sugar's identifier and version), a folder with your AppleScripts in it, and any FileAction or TextAction definitions that you need.
+
+For AppleScripts run as FileActions you can access the URL of the project itself using the environment variable **EDITOR_PROJECT_PATH** using a snippet like this:
+
+    on run argv
+        set projectPath to system attribute "ESPRESSO_PROJECT_PATH"
+        -- Do your actual AppleScript actions here
+    end run
+
+See the ExampleScripts.sugar for a working example.
 
 ## MIT License
 
