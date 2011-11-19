@@ -36,6 +36,7 @@
 		} else {
 			scriptPath = nil;
 		}
+		myBundlePath = [bundlePath retain];
     }
     
     return self;
@@ -44,6 +45,7 @@
 - (void)dealloc
 {
 	MRRelease(scriptPath);
+	MRRelease(myBundlePath);
     [super dealloc];
 }
 

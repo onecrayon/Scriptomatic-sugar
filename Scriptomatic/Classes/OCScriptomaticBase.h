@@ -12,6 +12,7 @@
 @interface OCScriptomaticBase : NSObject {
 @protected
     NSString *scriptPath;
+	NSString *myBundlePath;
 	BOOL allowMultipleSelections;
 	BOOL allowNoSelection;
 }

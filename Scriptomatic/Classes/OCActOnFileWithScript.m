@@ -21,7 +21,6 @@
 - (BOOL)canPerformActionWithContext:(id)context
 {
 	// Only allow the action if we have a script and the proper number of files
-	NSLog(@"allowNoSelection: %i", (int)allowNoSelection);
 	return scriptPath != nil && (([[context URLs] count] > 1 && allowMultipleSelections) || [[context URLs] count] == 1 || [[context URLs] count] == 0 && allowNoSelection);
 }
 
@@ -33,7 +32,10 @@
 		[paths appendFormat:@"\"%@\" ", [url path]];
 	}
 	// Create our environment variables
-	NSDictionary *env = [NSDictionary dictionaryWithObjectsAndKeys:[[self projectURLForContext:context] path], @"ESPRESSO_PROJECT_PATH", nil];
+	NSDictionary *env = [NSDictionary dictionaryWithObjectsAndKeys:
+						 [[self projectURLForContext:context] path], @"EDITOR_PROJECT_PATH",
+						 myBundlePath, @"EDITOR_SUGAR_PATH",
+						 nil];
 	// Create our osascript command
 	NSString *command = [NSString stringWithFormat:@"osascript %@ %@", scriptPath, paths];
 	NSLog(@"%@", [self runCommands:command withEnv:env]);

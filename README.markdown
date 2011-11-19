@@ -25,11 +25,14 @@ Essentially, you will need an Info.plist file (to define your Sugar's identifier
 For AppleScripts run as FileActions you can access the URL of the project itself using the environment variable **EDITOR_PROJECT_PATH** using a snippet like this:
 
     on run argv
-        set projectPath to system attribute "ESPRESSO_PROJECT_PATH"
+        set projectPath to system attribute "EDITOR_PROJECT_PATH"
         -- Do your actual AppleScript actions here
     end run
 
-See the ExampleScripts.sugar for a working example.
+See the ExampleScripts.sugar for a working example. The following variables are currently available:
+
+* EDITOR_PROJECT_PATH: the path to your project root folder
+* EDITOR_SUGAR_PATH: the path to your custom sugar
 
 ## MIT License
 
