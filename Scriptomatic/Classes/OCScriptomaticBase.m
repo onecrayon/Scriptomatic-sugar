@@ -73,7 +73,7 @@
 	[task launch];
 	
 	NSData *data;
-	NSString *outString = nil;
+	NSString *outString;
 	data = [[outPipe fileHandleForReading] readDataToEndOfFile];
 	outString = [[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] autorelease];
 	
