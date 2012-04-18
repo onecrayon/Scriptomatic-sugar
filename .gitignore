@@ -3,7 +3,7 @@
 profile
 
 # xcode noise
-build/*
+build/
 *.mode1
 *.mode1v3
 *.mode2v3
@@ -16,3 +16,6 @@ xcuserdata
 # svn & cvs
 .svn
 CVS
+
+# AppCode (IntelliJ) noise
+.idea/
